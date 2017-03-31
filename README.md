@@ -23,5 +23,6 @@ A Sketch plugin that forces you to name a group before you make it. I originally
 
 
 ## Contact
-* Twitter: [@brockmdonaldson](http://twitter.com/brockmdonaldson) 
-* Portfolio Site: [brockdonaldson.co](http://brockdonaldson.co) 
+Twitter <a href="http://twitter.com/brockmdonaldson" target="_blank">@brockmdonaldson</a>
+Portfolio Site <a href="http://brockdonaldson.co" target="_blank">brockdonaldson.co</a>
+
