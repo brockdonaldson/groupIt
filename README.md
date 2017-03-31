@@ -1,8 +1,6 @@
 # Move It
 A Sketch plugin that forces you to name a group before you make it. I originally made this for myself, as I needed help cleaning up my layers panel. I was hoping that through some pavlovian training, I would be able to turn the plugin off after a few months and stay in the habit of naming my groups. 
 
-![Group It Screen](./images/GroupItShortcut.gif)
-
 ## Installation
 1. Download plugin
 2. Double click the GroupIt.sketchplugin file.
@@ -14,6 +12,8 @@ A Sketch plugin that forces you to name a group before you make it. I originally
 4. Select Sketch from the application dropdown and input  `Group It` into the Menu Title
 2. Use the shortcut <kbd>cmd</kbd> + <kbd>G</kbd> to override the regular Group action.
 4. Click Add.
+
+![Group It Screen](./images/GroupItShortcut.gif)
 
 ## Using the Plugin
 1. Select the layers that you wish to group. 
