@@ -1,4 +1,4 @@
-# Move It
+# Group It
 A Sketch plugin that forces you to name a group before you make it. I originally made this for myself, as I needed help cleaning up my layers panel. I was hoping that through some pavlovian training, I would be able to turn the plugin off after a few months and stay in the habit of naming my groups. 
 
 ## Installation
