@@ -1,0 +1,22 @@
+{
+  "name" : "Group It",
+  "identifier" : "com.bohemiancoding.sketch.runscriptidentifier",
+  "description" : "Name Grouped Items (Pavlovian Training)",
+  "author" : "Brock Donaldson",
+  "authorEmail" : "brockmdonaldson@gmail.com",
+  "homepage": "https://github.com/brockdonaldson",
+  "bundleVersion": "1",
+  "commands" : [{
+      "script" : "groupIt.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "ctrl shift cmd g",
+      "name" : "Group It",
+      "identifier" : "Group It"
+    }],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "Group It"
+    ]
+  }
+}

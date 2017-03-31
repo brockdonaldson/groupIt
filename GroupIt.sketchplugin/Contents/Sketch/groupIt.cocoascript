@@ -1,0 +1,50 @@
+@import "main.js"
+
+function onRun(context) {
+  // Get all the things
+  initPlugin(context);
+  
+
+  // Load the window
+  if (selectionCount > 0){
+  var window = createGroupItWindow();
+  var alert = window[0];
+
+  // When “Ok” is clicked
+  var response = alert.runModal()
+  if (response == "1000") {
+    // Get the user’s values
+    var groupName = groupNameTextfield.stringValue();
+
+    var group = MSLayerGroup.new();
+    group.setName(groupName);
+
+    var lastLayerSelected = [selection lastObject];
+    var parentGroup = [lastLayerSelected parentGroup];
+    var indexOfLayer = parentGroup.indexOfLayer(lastLayerSelected);
+
+    // Run on all selections
+    for (var i = 0; i < selectionCount; i++) {
+      var layer = selection[i];
+      parentGroup.removeLayer(layer);
+      group.addLayers([layer]);
+    }
+    
+    var indexPosition = indexOfLayer - (selectionCount-1)
+    // parentGroup.addLayer(group);
+    [parentGroup insertLayers: [group] atIndex: indexPosition];
+
+    group.resizeToFitChildrenWithOption(0);
+
+    [doc showMessage: "You've create a group with " + selectionCount + " layer(s)."];
+
+    }
+
+  }
+
+  else{
+      // No layer selected
+      [doc showMessage: "You need to select at least one layer"];
+    }
+    
+}
